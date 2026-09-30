@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.pcap
+*.pcapng
+*.zip
+LIZCAL*/
+lizard_*/
+cable_test_*.json
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,21 @@
+name: Bug report
+description: Something is broken (it's a work in progress, so this is expected!)
+body:
+  - type: input
+    id: version
+    attributes: {label: Version, description: "Output of: python3 whoareyousb.py --version", placeholder: "0.1.0-wip"}
+    validations: {required: true}
+  - type: input
+    id: distro
+    attributes: {label: Distro and Python version, placeholder: "Linux Mint 22, Python 3.12"}
+    validations: {required: true}
+  - type: input
+    id: cmd
+    attributes: {label: Command or tab used, placeholder: "cable-check / Network tab"}
+  - type: textarea
+    id: what
+    attributes: {label: What happened?, description: What you expected and what you saw}
+    validations: {required: true}
+  - type: textarea
+    id: out
+    attributes: {label: Output, description: "Paste the output. Remove anything private (serial numbers, IPs).", render: shell}
